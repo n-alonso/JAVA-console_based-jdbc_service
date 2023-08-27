@@ -1,0 +1,136 @@
+2023-08-20 07:12:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (
+    id INT,
+name VARCHAR
+); [42101-200]
+2023-08-24 08:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO COMPANY (name) VALUES (); [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at carsharing.db.H2Client.run(H2Client.java:20)
+	at carsharing.dao.CompanyDAO.insert(CompanyDAO.java:68)
+	at carsharing.services.ConsoleInterface.createCompany(ConsoleInterface.java:42)
+	at carsharing.Main.main(Main.java:35)
+2023-08-24 08:57:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO COMPANY (name) VALUES (); [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at carsharing.db.H2Client.run(H2Client.java:20)
+	at carsharing.dao.CompanyDAO.insert(CompanyDAO.java:68)
+	at carsharing.services.ConsoleInterface.createCompany(ConsoleInterface.java:42)
+	at carsharing.Main.main(Main.java:35)
+2023-08-24 09:01:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO COMPANY (name) VALUES (); [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at carsharing.db.H2Client.run(H2Client.java:20)
+	at carsharing.dao.CompanyDAO.insert(CompanyDAO.java:68)
+	at carsharing.services.ConsoleInterface.createCompany(ConsoleInterface.java:42)
+	at carsharing.Main.main(Main.java:35)
+2023-08-24 09:05:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO COMPANY (name) VALUES (); [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at carsharing.db.H2Client.run(H2Client.java:20)
+	at carsharing.dao.CompanyDAO.insert(CompanyDAO.java:68)
+	at carsharing.services.ConsoleInterface.createCompany(ConsoleInterface.java:42)
+	at carsharing.Main.main(Main.java:35)
+2023-08-24 09:14:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO COMPANY (NAME) VALUES (SOME COMPANY[*]);"; expected "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO COMPANY (name) VALUES (Some Company); [42001-200]
+2023-08-26 06:21:21 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CAR" not found; SQL statement:
+DROP TABLE car; [42102-200]
+2023-08-26 06:23:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "COMPANY" because "CONSTRAINT_103" depends on it; SQL statement:
+DROP TABLE IF EXISTS company; [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at carsharing.db.H2Client.run(H2Client.java:21)
+	at carsharing.dao.CompanyDAO.<init>(CompanyDAO.java:39)
+	at carsharing.Main.main(Main.java:24)
+2023-08-26 06:26:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "COMPANY" because "CONSTRAINT_103" depends on it; SQL statement:
+DROP TABLE IF EXISTS company; [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at carsharing.db.H2Client.run(H2Client.java:21)
+	at carsharing.dao.CompanyDAO.<init>(CompanyDAO.java:39)
+	at carsharing.Main.main(Main.java:25)
+2023-08-26 06:28:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS car (id INT PRIMARY KEY AUTO_INCREMENT,name VARCHAR UNIQUE NOT NULL,company_id INT NOT NULL,FOREIGN KEY (company_id) REFERENCES company(id)); [42102-200]
+2023-08-26 06:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "COMPANY" because "CONSTRAINT_103" depends on it; SQL statement:
+DROP TABLE IF EXISTS company; [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at carsharing.db.H2Client.run(H2Client.java:21)
+	at carsharing.dao.CompanyDAO.<init>(CompanyDAO.java:39)
+	at carsharing.Main.main(Main.java:24)
